@@ -29,12 +29,8 @@
           console.error('No cameras found.');
           return;
         }
-        
         cameras.forEach( el => addCameraToList(el) );
-        //console.log(cameras);
         CAMERAS = cameras;
-        //scanner.start(cameras[0]);
-        
       }).catch(function (e) {
         console.error(e);
       });
